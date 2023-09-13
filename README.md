@@ -9,3 +9,6 @@ Você é um cientista de dados no Santander e recebeu a tarefa de envolver seus 
 3. Depois de obter os dados dos clientes, você vai usar a API do ChatGPT (OpenAI) para gerar uma mensagem de marketing personalizada para cada cliente. Essa mensagem deve enfatizar a importância dos investimentos.
 4. Uma vez que a mensagem para cada cliente esteja pronta, você vai enviar essas informações de volta para a API, atualizando a lista de "news" de cada usuário usando o endpoint ```PUT https://sdw-2023-prd.up.railway.app/users/{id} ```
 
+A partir disso extraia a lista de IDs de usuário a partir do arquivo CSV. Para cada ID, faça uma requisição GET para obter os dados do usuário correspondente.
+Depois utilize a API do OpenAI GPT-4 para gerar uma mensagem de marketing personalizada para cada usuário. E para finalizar atualize a lista de "news" de cada usuário na API com a nova mensagem gerada.
+
